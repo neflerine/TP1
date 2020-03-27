@@ -1,4 +1,4 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.getter;
 
 import java.io.IOException;
 import java.util.List;

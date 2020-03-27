@@ -1,4 +1,4 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.process;
 
 import java.util.Iterator;
 import java.util.List;

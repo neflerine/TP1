@@ -1,9 +1,12 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.process;
 
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import com.hemebiotech.analytics.getter.IGetter;
+import com.hemebiotech.analytics.sender.ISender;
 
 public class AnalyticsCounter {
 	

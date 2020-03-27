@@ -1,24 +1,20 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.sender;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
-public class TestSender extends Sender {
+public class FileSender extends Sender {
 
-	public TestSender(String filepath) {
-		super(filepath);
+	public FileSender (String path){
+		super (path);
+		
 		
 	}
-
-	/**
-	 * 
-	 * Pour chaque couple clé valeur, on écrit dans writer avec un retour à la ligne à chaque passage
-	 * @param map
-	 * 
-	 * 
-	 */
-	public void send(Map<String, Integer> map) {
+	
+	
+	@Override
+	public void send(Map<String, Integer> map) { //test avec boolean !
 
 		try {
 			FileWriter writer = new FileWriter (filepath);
@@ -31,11 +27,13 @@ public class TestSender extends Sender {
 			}
 			
 			writer.close();
+			//return true;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			//return false;
 		}
 
 	}
-	
+
 }

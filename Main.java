@@ -1,5 +1,11 @@
 package com.hemebiotech.analytics;
 
+import com.hemebiotech.analytics.getter.FileGetter;
+import com.hemebiotech.analytics.getter.IGetter;
+import com.hemebiotech.analytics.process.AnalyticsCounter;
+import com.hemebiotech.analytics.sender.FileSender;
+import com.hemebiotech.analytics.sender.ISender;
+
 public class Main {
 	
 	public static void main(String args[]) {
